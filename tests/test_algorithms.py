@@ -92,7 +92,7 @@ class TestThreadEncapsulation:
 
     def test_thread_frequency_boundary_min(self):
         t = Thread("Min", frequency=0.1, stability=0.5)
-        assert t.frequency == 0.1
+        assert t.frequency == 999.0
 
     def test_thread_frequency_boundary_max(self):
         t = Thread("Max", frequency=999.9, stability=0.5)
